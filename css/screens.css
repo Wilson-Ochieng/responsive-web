@@ -8,14 +8,18 @@ body {
     color: #555;
     margin: 0;
     padding: 0;
+    
 
 }
+
+
 
 /*Text*/
 h1 {
     margin: 0 0 1em 0;
     font-size: 2.8em;
     font-weight: 700;
+}
 
 
     h2 {
@@ -57,13 +61,14 @@ h1 {
         color: #65b1ff;
     }
 
-    /*header*/
+    
 
-  header {
-    height: 430px;
-    background: #cf0004 url(../images/banner_1200.jpg) no-repeat center bottom;
-    position: relative;
-}
+   
 
 
-}
+    header {
+        height: 430px;
+        position: relative;
+        background-image: url('../images/banner_1200.jpg'); 
+    }
+        
