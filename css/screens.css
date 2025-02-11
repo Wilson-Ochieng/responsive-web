@@ -137,3 +137,21 @@ section.main aside {
     float: left;
     text-align: center;
 }
+
+
+section.main .content {
+    margin: 15px;
+    background: no-repeat center top;
+    background-size: 75px 75px;
+    padding-top: 85px;
+}
+
+section.main aside h3 a {
+
+color: #000;  text-decoration: none;
+
+
+}
+section.main aside a:hover{
+    text-decoration: underline;
+}
