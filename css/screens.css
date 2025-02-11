@@ -8,11 +8,16 @@ body {
     color: #555;
     margin: 0;
     padding: 0;
-    
+
 
 }
 
-
+/*locks the page at 1200px*/
+#page {
+    max-width: 1200;
+    margin: 0 auto;
+    position: relative;
+}
 
 /*Text*/
 h1 {
@@ -22,53 +27,53 @@ h1 {
 }
 
 
-    h2 {
-        margin: 0 0 .5em 0;
-        font-size: 1.6em;
-        font-weight: 700;
-        line-height: 1.1em;
+h2 {
+    margin: 0 0 .5em 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
 
-    }
+}
 
-    h3 {
-        margin: 0 0 .5em 0;
-        font-size: 1.3em;
-        font-weight: 700;
+h3 {
+    margin: 0 0 .5em 0;
+    font-size: 1.3em;
+    font-weight: 700;
 
-    }
-
-
-    h3 {
-        margin: 0 0 1.5em 0;
-        font-size: 1.0em;
-        font-weight: 700;
-
-    }
-
-    p {
-        margin: 0 0 1em 0;
+}
 
 
+h3 {
+    margin: 0 0 1.5em 0;
+    font-size: 1.0em;
+    font-weight: 700;
 
-    }
+}
 
-    a {
-        color: #007eff;
-    }
-
-    a:visited {
-
-        color: #65b1ff;
-    }
-
-    
-
-   
+p {
+    margin: 0 0 1em 0;
 
 
-    header {
-        height: 430px;
-        position: relative;
-        background-image: url('../images/banner_1200.jpg'); 
-    }
-        
+
+}
+
+a {
+    color: #007eff;
+}
+
+a:visited {
+
+    color: #65b1ff;
+}
+
+
+
+
+
+
+header {
+    height: 430px;
+    background: #cf0004 url('../images/banner_1200.jpg') no-repeat bottom;
+    position: relative;
+
+}
