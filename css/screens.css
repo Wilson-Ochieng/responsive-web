@@ -122,6 +122,8 @@ header div.hero h1 {
 section{
 padding: 0 30px;
 }
+
+section::after {content: ''; display: block;}
 /*Section main*/
 
 section.main {
@@ -155,3 +157,15 @@ color: #000;  text-decoration: none;
 section.main aside a:hover{
     text-decoration: underline;
 }
+
+section.main aside  .content.trending {
+  background-image: url(../images/icon_star.svg);
+}
+
+section.main aside  .content.find-it {
+    background-image: url(../images/icon_marker.svg);
+  }
+
+section.main aside  .content.tools {
+    background-image: url(../images/icon_gear.svg);
+  }
