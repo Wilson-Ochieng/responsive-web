@@ -321,3 +321,8 @@ footer a:visited {
 footer a:hover {
     color: #000;
 }
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
