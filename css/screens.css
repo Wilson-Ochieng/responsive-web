@@ -13,6 +13,7 @@ body {
 }
 
 /*locks the page at 1200px*/
+
 #page {
     max-width: 1200;
     margin: 0 auto;
@@ -129,9 +130,11 @@ section {
     padding: 0 30px;
 }
 
-section::after {
+section::after{
+
     content: '';
     display: block;
+    clear: both;
 }
 
 /*Section main*/
@@ -256,3 +259,23 @@ padding-left: 20px;
 line-height: 1.3em;
 position: relative;
 }
+  
+
+  /*Section atmosphere*/
+
+  section.atmosphere {
+    background-color: #cc6633;
+    width: 100%;
+    padding: 200px;
+    box-sizing: border-box;
+
+
+    
+  }
+  section.atmosphere article {
+   padding: 0 20px 0 515px;
+   background: url(../images/photo_lounge.jpg) no-repeat 0 5px;
+   min-height: 220px;
+
+
+  }
