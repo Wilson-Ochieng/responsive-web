@@ -90,7 +90,7 @@ header {
 }
 
 header a.logo {
-
+    z-index: 1;
     position: absolute;
     display: block;
     width: 160px;
@@ -232,6 +232,7 @@ section.how-to aside .content a {
     color: #ccc733;
     font-weight: 700;
 }
+
 /*Blockquote*/
 section.how-to blockquote {
     margin: 0;
@@ -284,6 +285,18 @@ section.how-to blockquote p.credit::before {
     left: 0;
 }
 
+/*Navigation css*/
+
+nav {
+
+    background-color: rgba(0, 0, 0, .65);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
 footer {
     font-size: .8em;
     margin: 20px;
@@ -304,6 +317,7 @@ footer a {
 footer a:visited {
     color: #777;
 }
+
 footer a:hover {
     color: #000;
 }
