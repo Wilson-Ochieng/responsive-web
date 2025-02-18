@@ -47,9 +47,11 @@ a:visited {
     text-decoration: none;
 }
 
-a::after,a:visited::after {
-content: '( 'attr(href)')';
-
+a::after,
+a:visited::after {
+    content: '( ' attr(href)')';
+    font-style: italic;
+    word-wrap: break-word;
 }
 
 nav {
@@ -77,8 +79,15 @@ header a.logo {
     left: 20px;
 }
 
-header a.logo::after {
+header a.logo::before {
     content: url(../images/logo_print.svg);
+}
+
+header a.logo::after {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 175px;
 }
 
 header a.logo span {
@@ -86,7 +95,7 @@ header a.logo span {
     display: none;
 }
 
-header div.hero {   
+header div.hero {
     width: 75%;
     position: absolute;
     top: 110px;
@@ -94,3 +103,65 @@ header div.hero {
 
 }
 
+header div.hero a::after {
+
+    display: block;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+section.main aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+section.main aside div.content {
+    margin: 15px;
+
+}
+
+section.main aside div.content h3 a::after {
+    display: block;
+    font-family: serif;
+    font-weight: normal;
+
+
+}
+
+section.main aside div.content .trending {
+
+    content: url(../images/icon_star_print.svg);
+
+}
+
+section.main aside div.content .trending::before {
+
+    content: url(../images/icon_star_print.svg);
+
+}
+
+section.main aside div.content .find-it::before {
+
+    content: url(../images/icon_marker_print.svg);
+
+}
+
+section.main aside div.content .tools::before {
+    content: url(../images/icon_gear_print.svg);
+
+}
