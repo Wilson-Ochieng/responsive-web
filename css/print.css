@@ -189,6 +189,7 @@ section.how-to {
 
     padding-top: 50px;
     border-top: 1px solid #ccc;
+    page-break-inside: avoid;
 }
 
 section.how-to aside {
