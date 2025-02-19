@@ -170,11 +170,11 @@ section.atmosphere {
 }
 
 
-section.atmosphere::before
-{
-content: url(../images/photo_lounge_print.jpg);
+section.atmosphere::before {
+    content: url(../images/photo_lounge_print.jpg);
 
 }
+
 section.atmosphere article {
     width: 40%;
     position: absolute;
@@ -183,4 +183,80 @@ section.atmosphere article {
 
 
 
+}
+
+section.how-to {
+
+    padding-top: 50px;
+    border-top: 1px solid #ccc;
+}
+
+section.how-to aside {
+
+    width: 25%;
+    float: left;
+    margin: 0 35px 0 0;
+
+}
+
+section.how-to div.content img {
+    display: none
+}
+
+section.how-to aside:nth-child(1) div.content::before {
+
+    content: url(../images/photo_seating_print.jpg);
+}
+section.how-to aside:nth-child(2) div.content::before {
+
+    content: url(../images/photo_lighting_print.jpg);
+}
+
+/*Blockquote*/
+section.how-to blockquote {
+    width: 30%;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+
+section.how-to blockquote p {
+    margin: 30px 30px 20px 50px;
+
+}
+
+section.how-to blockquote p.quote {
+    font-style: italic;
+    font-size: 1.4em;
+    color: #888;
+}
+
+section.how-to blockquote p.credit {
+    padding-left: 20px;
+    position: relative;
+}
+
+
+section.how-to blockquote::before {
+
+    content: "\201C";
+    color: "#ccc";
+    display: inline-block;
+    position: absolute;
+    top: - 10px;
+    left: -45px;
+    font-size: 5em;
+    font-family: serif;
+}
+
+section.how-to blockquote p.quote::after {
+    content: "\201d";
+    font-family: serif;
+}
+
+section.how-to blockquote p.credit::before {
+    content: "\2014";
+    position: absolute;
+    top: -1px;
+    left: 0px;
 }
